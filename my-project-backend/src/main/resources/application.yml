@@ -1,0 +1,32 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mail:
+    host: smtp.163.com
+    username: cuf8fif9@163.com
+    password: XWEBNCXRJMXFVOMC
+  rabbitmq:
+    addresses: 192.168.255.132
+    username: admin
+    password: admin
+    virtual-host: /test
+  security:
+    filter:
+      order: -100
+    jwt:
+      key: bcdedit
+      expire: 7
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/baima_jwt_template
+  minio:
+    endpoint: 'http://192.168.255.132:9000'
+    username: 'minio'
+    password: 'password'
+qweather:
+  api:
+    key: 8aa5bacede2f4ab0b34ba54a6f39b280
